@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.avatar {
+  display: block;
+  width: 100%;
+}
+
+.avatar_discription {
+  display: none;
+  padding: 10vh 0;
+  color: #222222;
+}
+
+.header::before {
+  content: "If you are already crazy about this handsome guy, then look further... ♥";
+  position: absolute;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50vh;
+
+  display: block;
+  width: 40%;
+  color: white;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.main {
+  padding: 5vh 5%;
+  background-image: url("../image/background.jpg");
+}
+
+.description {
+
+}
+
+.list {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.adding {
+  font-weight: 700;
+  font-style: italic;
+  color: #222;
+}
+
+.me {
+  margin-top: 5vh;
+  font-weight: 700;
+  font-style: italic;
+  color: #913a07;
+}
+
+.text {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 85%;
+  padding: 3vh 5vw;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, .7);
+}
+
+.item {
+  margin-top: 2vh;
+}
+
+.link_wrapper {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: 40px;
+  background-image: url("../image/vk.png");
+  box-shadow: 2px 2px 5px 2px #ff77ff, -2px -2px 5px 2px #ffff88;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 700px) {
+  .header::before {
+    content: "If you are already crazy about this handsome guy, then look further... ♥";
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50vh;
+
+    display: block;
+    width: 70%;
+    color: white;
+    font-size: 1.5em;
+    font-style: italic;
+  }
+
+
+}
+
+@media screen and (min-width: 701px) {
+  .header {
+    padding-top: 10vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background-image: url("../image/background2.jpg");
+  }
+
+  .avatar {
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header::before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50vh;
+
+    display: block;
+    width: 40%;
+    color: white;
+    font-size: 1.5em;
+    font-style: italic;
+  }
+
+  .avatar_discription {
+    display: block;
+    padding: 10vh 0;
+    color: #fff;
+    font-size: 1.5em;
+  }
+
+}
